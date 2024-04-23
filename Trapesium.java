@@ -9,24 +9,11 @@ public class Trapesium {
         this.height = height;
     }
 
-    public double getEdge1() {
-        return base1;
-    }
-
-    public double getEdge2() {
-        return base2;
-    }
-
-    public double hitungTinggi() {
-        return height;
-    }
-
     public double hitungLuas() {
         return 0.5 * (base1 + base2) * height;
     }
 
     public double hitungKeliling() {
-        return base1 + base2 + 2 * Math.sqrt(Math.pow((base1 - base2) / 2, 2) + height * height);
+        return base1 + base2 + 2 * Math.sqrt(Math.pow((base1 - base2) / 2, 2) + Math.pow(height, 2));
     }
 }
-
